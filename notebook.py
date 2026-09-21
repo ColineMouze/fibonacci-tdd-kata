@@ -15,7 +15,11 @@ def _():
 
 @app.function
 def Fibonacci(n):
-    pass
+    if n == 0:
+        return 0
+    if n == 1:
+        return 1
+    return Fibonacci(n - 1) + Fibonacci(n - 2)
 
 
 @app.function
@@ -27,8 +31,8 @@ def test_Fiboinit():
 
 @app.function
 def test_Fibo():
-    assert Fibonacci(3) == 1
-    assert Fibonacci(4) == 1
+    assert Fibonacci(3) == 2
+    assert Fibonacci(4) == 3
     assert Fibonacci(12) == 144
     return
 
