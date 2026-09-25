@@ -1,4 +1,5 @@
 import marimo
+from marimo._plugins.ui import slider
 
 __generated_with = "0.24.2"
 app = marimo.App(width="medium")
@@ -37,7 +38,13 @@ def test_Fibo():
 
 @app.cell
 def _():
+    slider = marimo.ui.slider(1, 10, 50)
+    marimo.md(f"Value: {slider}").display() 
     return
+
+@app.cell
+def _():
+    slider.value
 
 
 if __name__ == "__main__":
