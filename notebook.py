@@ -39,7 +39,7 @@ def test_fibonacci_values():
 
 @app.cell
 def _(marimo):
-    slider = marimo.ui.slider(0, 30, value=10)
+    slider = marimo.ui.slider(0, 10**7, value=10)
     slider
     return (slider,)
 
