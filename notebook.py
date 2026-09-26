@@ -13,6 +13,7 @@ def _():
     return (marimo,)
 
 
+@app.function
 def fibonacci(n):
     a = 0
     b = 1
@@ -39,7 +40,7 @@ def test_fibonacci_values():
 
 @app.cell
 def _(marimo):
-    slider = marimo.ui.slider(0, 10**7, value=10)
+    slider = marimo.ui.slider(0, 50, value=10)
     slider
     return (slider,)
 
@@ -55,6 +56,10 @@ def test_fibonacci_large_values():
     assert fibonacci(100) == 354224848179261915075
 
 
+@app.cell
+def _():
+    return
+
+
 if __name__ == "__main__":
     app.run()
-

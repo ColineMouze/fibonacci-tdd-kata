@@ -20,7 +20,7 @@
     },
     {
       "id": "MJUe",
-      "code_hash": "5c0ccb0c13b32991ed7b36cb2ccfda10",
+      "code_hash": "123ed9b62e8b2e2470200ea820efca39",
       "outputs": [
         {
           "type": "data",
@@ -33,6 +33,26 @@
     },
     {
       "id": "vblA",
+      "code_hash": "5c0ccb0c13b32991ed7b36cb2ccfda10",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": [
+        {
+          "type": "stream",
+          "name": "stdout",
+          "text": "\u001b[32m.\u001b[0m\u001b[33m                                                                        [100%]\u001b[0m\n=================================== Overview ===================================\nPassed Tests:\n\u001b[1m\u001b[32m\u001b[22m\u2713\u001b[0m\u001b[0m notebook.py::test_fibonacci_base_cases\n\nSummary:\nTotal: 1, Passed: 1, Failed: 0, Errors: 0, Skipped: 0\n",
+          "mimetype": "text/plain"
+        }
+      ]
+    },
+    {
+      "id": "bkHC",
       "code_hash": "9f99954b43d045b7ed8ea361d981637c",
       "outputs": [
         {
@@ -46,33 +66,60 @@
         {
           "type": "stream",
           "name": "stdout",
-          "text": "\u001b[31mF\u001b[0m\u001b[31m                                                                        [100%]\u001b[0m\n=================================== FAILURES ===================================\n\u001b[31m\u001b[1m____________________________ test_fibonacci_values _____________________________\u001b[0m\n\n    def test_fibonacci_values():\n>       assert fibonacci(3) == 2\n               ^^^^^^^^^\n\u001b[1m\u001b[31mE       NameError: name 'fibonacci' is not defined\u001b[0m\n\n\u001b[1m\u001b[31mmarimo://notebook.py#cell_id=vblA\u001b[0m:2: NameError\n=================================== Overview ===================================\n\nSummary:\nTotal: 1, Passed: 0, Failed: 1, Errors: 0, Skipped: 0\n\u001b[36m\u001b[1m=========================== short test summary info ============================\u001b[0m\n\u001b[31mFAILED\u001b[0m notebook.py::\u001b[1mtest_fibonacci_values\u001b[0m - NameError: name 'fibonacci' is not defined\n",
+          "text": "\u001b[32m.\u001b[0m\u001b[33m                                                                        [100%]\u001b[0m\n=================================== Overview ===================================\nPassed Tests:\n\u001b[1m\u001b[32m\u001b[22m\u2713\u001b[0m\u001b[0m notebook.py::test_fibonacci_values\n\nSummary:\nTotal: 1, Passed: 1, Failed: 0, Errors: 0, Skipped: 0\n",
           "mimetype": "text/plain"
         }
       ]
     },
     {
-      "id": "bkHC",
-      "code_hash": "2f97c4db5a64d89abe3a5ffbd3d69730",
+      "id": "lEQa",
+      "code_hash": "7e200d830be9232add12929fdc05066a",
       "outputs": [
         {
           "type": "data",
           "data": {
-            "text/html": "<marimo-ui-element object-id='bkHC-0' random-id='3d96330f-9f25-805d-b098-9d3f4da2788f'><marimo-slider data-initial-value='10' data-label='null' data-start='0' data-stop='30' data-steps='[]' data-debounce='false' data-disabled='false' data-orientation='&quot;horizontal&quot;' data-show-value='false' data-include-input='false' data-full-width='false'></marimo-slider></marimo-ui-element>"
+            "text/html": "<marimo-ui-element object-id='lEQa-0' random-id='f0f15876-a756-ebe9-9934-9b3f61cc37c0'><marimo-slider data-initial-value='10' data-label='null' data-start='0' data-stop='50' data-steps='[]' data-debounce='false' data-disabled='false' data-orientation='&quot;horizontal&quot;' data-show-value='false' data-include-input='false' data-full-width='false'></marimo-slider></marimo-ui-element>"
           }
         }
       ],
       "console": []
     },
     {
-      "id": "lEQa",
+      "id": "PKri",
       "code_hash": "4da209c81d11a73628a378c5c4d84367",
-      "outputs": [],
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><span class=\"paragraph\">fibonacci(18) = 2584</span></span>"
+          }
+        }
+      ],
       "console": []
     },
     {
-      "id": "PKri",
+      "id": "Xref",
       "code_hash": "0cc770cea49011c85fcbcfe3613a5474",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": [
+        {
+          "type": "stream",
+          "name": "stdout",
+          "text": "\u001b[32m.\u001b[0m\u001b[33m                                                                        [100%]\u001b[0m\n=================================== Overview ===================================\nPassed Tests:\n\u001b[1m\u001b[32m\u001b[22m\u2713\u001b[0m\u001b[0m notebook.py::test_fibonacci_large_values\n\nSummary:\nTotal: 1, Passed: 1, Failed: 0, Errors: 0, Skipped: 0\n",
+          "mimetype": "text/plain"
+        }
+      ]
+    },
+    {
+      "id": "SFPL",
+      "code_hash": null,
       "outputs": [],
       "console": []
     }
