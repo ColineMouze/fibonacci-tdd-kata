@@ -7,7 +7,6 @@ app = marimo.App(width="medium")
 @app.cell
 def _():
     import marimo
-    import pytest as py
 
 
     return (marimo,)
@@ -27,7 +26,6 @@ def fibonacci(n):
 def test_fibonacci_base_cases():
     assert fibonacci(0) == 0
     assert fibonacci(1) == 1
-    return
 
 
 @app.function
@@ -35,7 +33,6 @@ def test_fibonacci_values():
     assert fibonacci(3) == 2
     assert fibonacci(4) == 3
     assert fibonacci(12) == 144
-    return
 
 
 @app.cell
@@ -48,7 +45,6 @@ def _(marimo):
 @app.cell
 def _(marimo, slider):
     marimo.md(f"fibonacci({slider.value}) = {fibonacci(slider.value)}")
-    return
 
 
 @app.function
