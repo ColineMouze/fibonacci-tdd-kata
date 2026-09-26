@@ -13,18 +13,13 @@ def _():
     return (marimo,)
 
 
-@app.function
 def fibonacci(n):
-    """Return the nth number of the Fibonacci sequence.
-
-    The Fibonacci sequence is defined by:
-        F(0) = 0
-        F(1) = 1
-        F(n) = F(n-1) + F(n-2) for n >= 2.
-    """
-    if n < 2:
-        return n
-    return fibonacci(n - 1) + fibonacci(n - 2)
+    a = 0
+    b = 1
+    for _ in range(n):
+        a, b = b, a + b
+    """Return the nth number of the Fibonacci sequence."""
+    return a
 
 
 @app.function
@@ -55,10 +50,11 @@ def _(marimo, slider):
     return
 
 
-@app.cell
-def _():
-    return
+@app.function
+def test_fibonacci_large_values():
+    assert fibonacci(100) == 354224848179261915075
 
 
 if __name__ == "__main__":
     app.run()
+
