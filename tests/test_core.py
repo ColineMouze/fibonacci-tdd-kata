@@ -17,6 +17,7 @@ def test_fibonacci_values():
 def test_fibonacci_large_values():
     assert fibonacci(100) == 354224848179261915075
 
+
 def test_fibonacci_negative_input():
     with pytest.raises(ValueError, match="non-negative"):
         fibonacci(-1)
