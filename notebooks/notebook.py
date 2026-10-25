@@ -6,50 +6,26 @@ app = marimo.App(width="medium")
 
 @app.cell
 def _():
-    import marimo
+    from fibonacci_kata import fibonacci
 
-
-    return (marimo,)
-
-
-@app.function
-def fibonacci(n):
-    a = 0
-    b = 1
-    for _ in range(n):
-        a, b = b, a + b
-    """Return the nth number of the Fibonacci sequence."""
-    return a
-
-
-@app.function
-def test_fibonacci_base_cases():
-    assert fibonacci(0) == 0
-    assert fibonacci(1) == 1
-
-
-@app.function
-def test_fibonacci_values():
-    assert fibonacci(3) == 2
-    assert fibonacci(4) == 3
-    assert fibonacci(12) == 144
+    return (fibonacci,)
 
 
 @app.cell
-def _(marimo):
-    slider = marimo.ui.slider(0, 50, value=10)
+def _():
+    import marimo as mo
+
+    slider = mo.ui.slider(0, 50, value=10, label="Indice n")
     slider
-    return (slider,)
+    return mo, slider
 
 
 @app.cell
-def _(marimo, slider):
-    marimo.md(f"fibonacci({slider.value}) = {fibonacci(slider.value)}")
-
-
-@app.function
-def test_fibonacci_large_values():
-    assert fibonacci(100) == 354224848179261915075
+def _(fibonacci, mo, slider):
+    mo.md(f"""
+    ### Fibonacci\n\nfibonacci({slider.value}) = **{fibonacci(slider.value)}**
+    """)
+    return
 
 
 @app.cell
