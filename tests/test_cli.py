@@ -35,6 +35,7 @@ def test_main_requires_an_argument(monkeypatch):
     with pytest.raises(SystemExit):
         main()
 
+
 def test_main_rejects_negative_number(monkeypatch):
     monkeypatch.setattr("sys.argv", ["fibonacci-kata", "-1"])
     with pytest.raises(SystemExit):

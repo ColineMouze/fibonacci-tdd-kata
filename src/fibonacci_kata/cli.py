@@ -1,7 +1,9 @@
 """Command-line interface for fibonacci_kata."""
 
 import argparse
+
 from fibonacci_kata import fibonacci
+
 
 def build_parser() -> argparse.ArgumentParser:
     """Build the command-line argument parser."""
@@ -26,6 +28,7 @@ def build_parser() -> argparse.ArgumentParser:
         help="End of a range (inclusive).",
     )
     return parser
+
 
 def main() -> None:
     """Run the Fibonacci command-line interface."""
